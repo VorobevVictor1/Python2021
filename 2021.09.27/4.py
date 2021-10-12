@@ -42,7 +42,7 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         head_height = scale * 40
         ellipse(screen, WHITE, [head_x, head_y, head_width, head_height])
         ellipse(screen, BLACK, [head_x, head_y, head_width, head_height], 2)
-        pass
+
 
     def bear_eye(x, y, scale, screen):
         '''
@@ -55,7 +55,6 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         bear_eye_y = y - scale * 10
         bear_eye_radius = int(scale * 3)
         circle(screen, BLACK, (bear_eye_x, bear_eye_y), bear_eye_radius)
-        pass
 
     def nose(x, y, scale, screen):
         '''
@@ -68,7 +67,6 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         nose_y = y
         nose_radius = int(scale * 3)
         circle(screen, BLACK, (nose_x, nose_y), nose_radius)
-        pass
 
     def ear(x, y, scale, screen):
         '''
@@ -82,7 +80,6 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         ear_radius = int(scale * 7)
         circle(screen, WHITE, (ear_x, ear_y), ear_radius)
         circle(screen, BLACK, (ear_x, ear_y), ear_radius, 2)
-        pass
 
     def mouth(x, y, scale, screen):
         '''
@@ -107,7 +104,6 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         bear_body_height = scale * 200
         ellipse(screen, WHITE, [x, y, bear_body_width, bear_body_height])
         ellipse(screen, BLACK, [x, y, bear_body_width, bear_body_height], 2)
-        pass
 
     def arm(x, y, scale, screen):
         '''
@@ -122,7 +118,6 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         arm_height = scale * 20
         ellipse(screen, WHITE, [arm_x, arm_y, arm_width, arm_height])
         ellipse(screen, BLACK, [arm_x, arm_y, arm_width, arm_height], 2)
-        pass
 
     def hip(x, y, scale, screen):
         '''
@@ -137,7 +132,6 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         hip_height = scale * 60
         ellipse(screen, WHITE, [hip_x, hip_y, hip_width, hip_height])
         ellipse(screen, BLACK, [hip_x, hip_y, hip_width, hip_height], 2)
-        pass
 
     def foot(x, y, scale, screen):
         '''
@@ -152,7 +146,6 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         foot_height = scale * 40
         ellipse(screen, WHITE, [foot_x, foot_y, foot_width, foot_height])
         ellipse(screen, BLACK, [foot_x, foot_y, foot_width, foot_height], 2)
-        pass
 
     def fish_rod(x, y, scale, screen):
         '''
@@ -167,7 +160,6 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         lines(screen, BLACK, False, [[fish_rod_x, fish_rod_y], [fish_rod_x + scale * 20, fish_rod_y - scale * 20],
                                      [fish_rod_x + scale * 220, fish_rod_y - scale * 120],
                                      [fish_rod_x + scale * 220, fish_rod_y + scale * 80]], fish_rod_thickness)
-        pass
 
     def hole(x, y, scale, screen):
         '''
@@ -184,7 +176,6 @@ def picture_of_bear(x, y, scale=1, screen=surf):
             [hole_x, hole_y, hole_width, hole_height])
         ellipse(screen, BLACK, [hole_x - scale * 10, hole_y - scale * 10, hole_width + scale * 20,
                                 hole_height + scale * 20], int(scale * 12))
-        pass
 
     head(x, y, scale, screen)
     bear_eye(x, y, scale, screen)
@@ -197,7 +188,6 @@ def picture_of_bear(x, y, scale=1, screen=surf):
     foot(x, y, scale, screen)
     fish_rod(x, y, scale, screen)
     hole(x, y, scale, screen)
-    pass
 
 
 def picture_of_fish(x, y, scale=1, screen=surf):
@@ -219,7 +209,6 @@ def picture_of_fish(x, y, scale=1, screen=surf):
         fish_body_height = scale * 100
         ellipse(screen, WHITE, [x, y, fish_body_width, fish_body_height])
         ellipse(screen, BLACK, [x, y, fish_body_width, fish_body_height], 2)
-        pass
 
     def tale(x, y, scale, screen):
         '''
@@ -233,7 +222,6 @@ def picture_of_fish(x, y, scale=1, screen=surf):
         polygon(screen, BLACK,
                 [(tale_x, tale_y), (tale_x - scale * 100, tale_y - scale * 100),
                  (tale_x - scale * 100, tale_y + scale * 100), (tale_x, tale_y)])
-        pass
 
     def fish_eye(x, y, scale, screen):
         '''
@@ -247,12 +235,10 @@ def picture_of_fish(x, y, scale=1, screen=surf):
         fish_eye_radius = int(scale * 20)
         circle(screen, BLACK, (fish_eye_x, fish_eye_y), fish_eye_radius)
         circle(screen, RED, (fish_eye_x, fish_eye_y), int(fish_eye_radius / 2))
-        pass
 
     fish_body(x, y, scale, screen)
     tale(x, y, scale, screen)
     fish_eye(x, y, scale, screen)
-    pass
 
 def background(x, y, screen=surf):
     '''
@@ -272,7 +258,6 @@ def background(x, y, screen=surf):
         sky_height = 300
         rect(surf, SKY_COLOR, (sky_x, sky_y, sky_width, sky_height))
         rect(surf, BLACK, (sky_x, sky_y + 300, sky_width, int(sky_height / 30)))
-        pass
 
     def sun(x, y, screen):
         '''
@@ -285,7 +270,6 @@ def background(x, y, screen=surf):
         circle(surf, SUN_COLOR, (x, y), sun_radius, sun_thickness)
         rect(surf, SUN_COLOR, (x - 100, y, sun_radius * 2, int(sun_thickness / 2)))
         rect(surf, SUN_COLOR, (x, y - 100, int(sun_thickness / 2), sun_radius * 2))
-        pass
 
     sky(screen)
     sun(x, y, screen)
