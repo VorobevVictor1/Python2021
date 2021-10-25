@@ -26,7 +26,7 @@ def picture_of_bear(x, y, scale=1, screen=surf):
     Рисует медведя.
     x,y - координаты точки, с которой начинает рисоваться эллипс тела медведя.
     scale - коэф. увеличения.
-    screen - поверхность для рисования pygame.surface
+    SCREEN - поверхность для рисования pygame.surface
     '''
 
     def head(x, y, scale, screen):
@@ -34,7 +34,7 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         Рисует голову медведя белого цвета с церной обводкой.
         x,y - координаты точки, с которой начинает рисоваться эллипс тела медведя.
         scale - коэф. увеличения.
-        screen - поверхность для рисования pygame.surface.
+        SCREEN - поверхность для рисования pygame.surface.
         '''
         head_x = x + scale * 60
         head_y = y - scale * 20
@@ -49,7 +49,7 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         Рисует глаз медведя на голове.
         x,y - координаты точки, с которой начинает рисоваться эллипс тела медведя.
         scale - коэф. увеличения.
-        screen - поверхность для рисования pygame.surface.
+        SCREEN - поверхность для рисования pygame.surface.
         '''
         bear_eye_x = x + scale * 90
         bear_eye_y = y - scale * 10
@@ -61,7 +61,7 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         Рисует нос медведя на голове.
         x,y - координаты точки, с которой начинает рисоваться эллипс тела медведя.
         scale - коэф. увеличения.
-        screen - поверхность для рисования pygame.surface.
+        SCREEN - поверхность для рисования pygame.surface.
         '''
         nose_x = x + scale * 140
         nose_y = y
@@ -73,7 +73,7 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         Рисует белое ухо с черной обводкой на голове медведя.
         x,y - координаты точки, с которой начинает рисоваться эллипс тела медведя.
         scale - коэф. увеличения.
-        screen - поверхность для рисования pygame.surface.
+        SCREEN - поверхность для рисования pygame.surface.
         '''
         ear_x = x + scale * 60
         ear_y = y - scale * 10
@@ -86,7 +86,7 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         Рисует рот медведя на голове.
         x,y - координаты точки, с которой начинает рисоваться эллипс тела медведя.
         scale - коэф. увеличения.
-        screen - поверхность для рисования pygame.surface.
+        SCREEN - поверхность для рисования pygame.surface.
         '''
         mouth_x = x + scale * 100
         mouth_y = y + scale * 10
@@ -98,7 +98,7 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         Рисует белое тело медведя с черной обводкой.
         x,y - координаты точки, с которой начинает рисоваться эллипс тела медведя.
         scale - коэф. увеличения.
-        screen - поверхность для рисования pygame.surface.
+        SCREEN - поверхность для рисования pygame.surface.
         '''
         bear_body_width = scale * 100
         bear_body_height = scale * 200
@@ -110,7 +110,7 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         Рисует белую руку медведя с черной обводкой.
         x,y - координаты точки, с которой начинает рисоваться эллипс тела медведя.
         scale - коэф. увеличения.
-        screen - поверхность для рисования pygame.surface.
+        SCREEN - поверхность для рисования pygame.surface.
         '''
         arm_x = x + scale * 90
         arm_y = y + scale * 60
@@ -124,7 +124,7 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         Рисует белое бедро медведя с черной обводкой.
         x,y - координаты точки, с которой начинает рисоваться эллипс тела медведя.
         scale - коэф. увеличения.
-        screen - поверхность для рисования pygame.surface.
+        SCREEN - поверхность для рисования pygame.surface.
         '''
         hip_x = x + scale * 40
         hip_y = y + scale * 170
@@ -138,7 +138,7 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         Рисует белую ступню медведя с черной обводкой.
         x,y - координаты точки, с которой начинает рисоваться эллипс тела медведя.
         scale - коэф. увеличения.
-        screen - поверхность для рисования pygame.surface.
+        SCREEN - поверхность для рисования pygame.surface.
         '''
         foot_x = x + scale * 100
         foot_y = y + scale * 200
@@ -152,7 +152,7 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         Рисует удочку медведя.
         x,y - координаты точки, с которой начинает рисоваться эллипс тела медведя.
         scale - коэф. увеличения.
-        screen - поверхность для рисования pygame.surface.
+        SCREEN - поверхность для рисования pygame.surface.
         '''
         fish_rod_x = x + scale * 100
         fish_rod_y = y + scale * 100
@@ -166,7 +166,7 @@ def picture_of_bear(x, y, scale=1, screen=surf):
         Рисует прорубь с водой случайного цвета.
         x,y - координаты точки, с которой начинает рисоваться эллипс тела медведя.
         scale - коэф. увеличения.
-        screen - поверхность для рисования pygame.surface.
+        SCREEN - поверхность для рисования pygame.surface.
         '''
         hole_x = x + scale * 280
         hole_y = y + scale * 170
@@ -195,7 +195,7 @@ def picture_of_fish(x, y, scale=1, screen=surf):
     Рисует рыбу.
     x,y - точка прикрепления хвоста к телу.
     scale - коэф. увеличения.
-    screen - поверхность для рисования pygame.surface.
+    SCREEN - поверхность для рисования pygame.surface.
     '''
 
     def fish_body(x, y, scale, screen):
@@ -203,7 +203,7 @@ def picture_of_fish(x, y, scale=1, screen=surf):
         Рисует белое тело рыбы с черной обводкой.
         x,y - координаты точки, с которой начинает рисоваться эллипс тела рыбы.
         scale - коэф. увеличения.
-        screen - поверхность для рисования pygame.surface.
+        SCREEN - поверхность для рисования pygame.surface.
         '''
         fish_body_width = scale * 400
         fish_body_height = scale * 100
@@ -215,7 +215,7 @@ def picture_of_fish(x, y, scale=1, screen=surf):
         Рисует черный хвост рыбы.
         x,y - координаты точки, с которой начинает рисоваться эллипс тела рыбы.
         scale - коэф. увеличения.
-        screen - поверхность для рисования pygame.surface.
+        SCREEN - поверхность для рисования pygame.surface.
         '''
         tale_x = x
         tale_y = y + scale * 50
@@ -228,7 +228,7 @@ def picture_of_fish(x, y, scale=1, screen=surf):
         Рисует черный глаз рыбы с красным зрачком.
         x,y - координаты точки, с которой начинает рисоваться эллипс тела рыбы.
         scale - коэф. увеличения.
-        screen - поверхность для рисования pygame.surface.
+        SCREEN - поверхность для рисования pygame.surface.
         '''
         fish_eye_x = x + scale * 300
         fish_eye_y = y + scale * 50
@@ -244,13 +244,13 @@ def background(x, y, screen=surf):
     '''
     Функция рисует фон картинки.
     x, y - координаты центра солнца.
-    screen- поверхность для рисования pygame.surface.
+    SCREEN- поверхность для рисования pygame.surface.
     '''
     def sky(screen):
         '''
         Функция рисует небо и горизонт.
         x, y - координаты центра солнца.
-        screen- поверхность для рисования pygame.surface.
+        SCREEN- поверхность для рисования pygame.surface.
         '''
         sky_x = 0
         sky_y = 0
@@ -263,7 +263,7 @@ def background(x, y, screen=surf):
         '''
         Функция рисует солнце на небе, состоящее из окружности и горизонтальной и вертикальной полос.
         x, y - координаты центра солнца.
-        screen- поверхность для рисования pygame.surface.
+        SCREEN- поверхность для рисования pygame.surface.
         '''
         sun_radius = 100
         sun_thickness = 20
